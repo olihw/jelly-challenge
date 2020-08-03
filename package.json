@@ -1,0 +1,15 @@
+{
+  "name": "jelly",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./build_docker.ps1 && @powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./deploy_docker.ps1 && npm i && node app",
+    "stop": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./stop_docker.ps1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0",
+    "pg-promise": "^10.5.8"
+  }
+}

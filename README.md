@@ -1,1 +1,2 @@
-jelly-challenge
+- I didn't do any mutations because I spent majority of the time trying to figure out a clever way of doing recursive queries in postgres for the recipes. (Nearly got there, there is one small bug).
+- Runs on localhost: 3000
